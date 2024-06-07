@@ -37,7 +37,7 @@ const Facilities = ({route}) => {
     return (
 
         <View
-            className={'flex flex-col items-start w-full h-[20%]'}
+            className={'flex flex-col items-start w-full h-[20%] mt-2'}
         >
             <Text
                 className={'text-lg'}
