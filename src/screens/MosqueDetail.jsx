@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Text, View} from 'react-native';
 
 function MosqueDetail() {
@@ -8,6 +8,7 @@ function MosqueDetail() {
         >
             <Text
                 className={'text-2xl text-green-500'}
+                style={{fontFamily: 'Nunito-ExtraBold'}}
             >
                 Mosque Detail Screen
             </Text>
