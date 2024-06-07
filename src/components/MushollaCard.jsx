@@ -1,56 +1,48 @@
 import {Text, TouchableOpacity, View} from "react-native";
 import React from "react";
 import {style} from "../ui/style";
+import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
+import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 const MushollaCard = ({item, navigation}) => {
     return (
-        <View
-            className={'flex flex-row justify-between items-center bg-[#EFF4EC] w-full h-20 px-2 my-2 rounded-xl border-[1px] border-[#91AE9E]'}
+        <TouchableOpacity
+            onPress={() => navigation.navigate('MosqueDetail', {item: item})}
+            className={'flex flex-row justify-between bg-[#EFF4EC] w-full h-20 px-3 my-2 rounded-xl border-[1px] border-[#91AE9E]'}
             style={style.card}
         >
             <View
-                className={'flex flex-col justify-center items-center'}
+                className={'flex flex-col justify-center'}
             >
                 <Text
-                    className={'text-lg font-bold'}
+                    className={'text-md mb-1'}
+                    style={{fontFamily: 'Nunito-Bold'}}
                 >
                     {item.name}
                 </Text>
-                <Text
-                    className={'text-sm'}
+                <View
+                    className={'flex flex-row items-center'}
                 >
-                    {item.location}
-                </Text>
-            </View>
-            <View
-                className={'flex flex-col justify-center items-center'}
-            >
-                <Text
-                    className={'text-lg font-bold'}
-                >
-                    {item.capacity}
-                </Text>
-                <Text
-                    className={'text-sm'}
-                >
-                    Kapasitas
-                </Text>
-            </View>
-            <View
-                className={'flex flex-col justify-center items-center'}
-            >
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('MosqueDetail', {item})}
-                    className={'bg-[#0C6A39] px-5 py-2 rounded-lg'}
-                >
+                    <FontAwesomeIcon icon={faLocationDot} color={'#000'} size={20}/>
                     <Text
-                        className={'text-white'}
+                        className={'text-xs'}
+                        style={{fontFamily: 'Nunito'}}
                     >
-                        Detail
+                        {item.location.toString()}m
                     </Text>
-                </TouchableOpacity>
+                </View>
             </View>
-        </View>
+            <View
+                className={'flex flex-col justify-end mb-3'}
+            >
+                <Text
+                    className={'text-xs'}
+                    style={{fontFamily: 'Nunito'}}
+                >
+                    Kapasitas: {item.occupied} / {item.capacity}
+                </Text>
+            </View>
+        </TouchableOpacity>
     )
 }
 

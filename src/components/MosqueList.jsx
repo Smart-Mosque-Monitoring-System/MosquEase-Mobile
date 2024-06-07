@@ -15,61 +15,71 @@ const mosqueData =
         {
             id: '1',
             name: 'Masjid Al-Haram',
-            location: 'Makkah, Saudi Arabia',
+            location: 49,
+            occupied: 10,
             capacity: 20,
         },
         {
             id: '2',
             name: 'Masjid An-Nabawi',
-            location: 'Madinah, Saudi Arabia',
+            location: 20,
+            occupied: 10,
             capacity: 50,
         },
         {
             id: '3',
             name: 'Masjid Al-Aqsa',
-            location: 'Jerusalem',
+            location: 30,
+            occupied: 10,
             capacity: 100
         },
         {
             id: '4',
             name: 'Masjid Istiqlal',
-            location: 'Jakarta, Indonesia',
+            location: 43,
+            occupied: 10,
             capacity: 200
         },
         {
             id: '5',
             name: 'Masjid Raya Bandung',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 150
         },
         {
             id: '6',
             name: 'Masjid Salman ITB',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 100
         },
         {
             id: '7',
             name: 'Masjid Salman ITB',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 100
         },
         {
             id: '8',
             name: 'Masjid Salman ITB',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 100
         },
         {
             id: '9',
             name: 'Masjid Salman ITB',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 100
         },
         {
             id: '10',
             name: 'Masjid Salman ITB',
-            location: 'Bandung, Indonesia',
+            location: 25,
+            occupied: 10,
             capacity: 100
         }
     ]

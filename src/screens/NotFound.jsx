@@ -7,6 +7,7 @@ const NotFound = () => {
             className={'justify-center w-screen h-screen bg-white items-center'}>
             <Text
                 className={'text-black text-center text-2xl'}
+                style={{fontFamily: 'Nunito-ExtraBold'}}
             >
                 404 Not Found
             </Text>
