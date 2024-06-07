@@ -1,6 +1,6 @@
 import {Text, TouchableOpacity, View} from "react-native";
 import React from "react";
-import {style} from "../ui/style";
+import style from "../ui/style";
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
@@ -16,7 +16,7 @@ const MushollaCard = ({item, navigation}) => {
             >
                 <Text
                     className={'text-md mb-1'}
-                    style={{fontFamily: 'Nunito-Bold'}}
+                    style={style.bold}
                 >
                     {item.name}
                 </Text>
@@ -26,7 +26,7 @@ const MushollaCard = ({item, navigation}) => {
                     <FontAwesomeIcon icon={faLocationDot} color={'#000'} size={20}/>
                     <Text
                         className={'text-xs'}
-                        style={{fontFamily: 'Nunito'}}
+                        style={style.regular}
                     >
                         {item.location.toString()}m
                     </Text>
@@ -37,7 +37,7 @@ const MushollaCard = ({item, navigation}) => {
             >
                 <Text
                     className={'text-xs'}
-                    style={{fontFamily: 'Nunito'}}
+                    style={style.regular}
                 >
                     Kapasitas: {item.occupied} / {item.capacity}
                 </Text>

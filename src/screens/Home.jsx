@@ -3,7 +3,8 @@ import {View} from 'react-native';
 import HomeHero from '../components/HomeHero';
 import MosqueList from '../components/MosqueList';
 
-function Home({navigation}) {
+function Home({navigation, route}) {
+    const mosqueData = route.params;
     return (
         <View
             className={'flex flex-col items-start bg-white w-full h-full'}
@@ -14,6 +15,7 @@ function Home({navigation}) {
             <HomeHero />
             <MosqueList
                 navigation={navigation}
+                mosqueData={mosqueData}
             />
         </View>
     );

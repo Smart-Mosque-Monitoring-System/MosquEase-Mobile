@@ -3,6 +3,7 @@ import {Image, Text, View} from 'react-native'
 import {LinearGradient} from 'expo-linear-gradient'
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import style from '../ui/style'
 
 const mosqueLogo = require('../../assets/pics/mosqueLogo.png')
 
@@ -25,7 +26,7 @@ const HomeHero = () => {
                 >
                     <Text
                         className={'text-white text-lg mb-2'}
-                        style={{fontFamily: 'Nunito-ExtraBold'}}
+                        style={style.extraBold}
                     >
                         Musholla terdekat!
                     </Text>
@@ -39,7 +40,7 @@ const HomeHero = () => {
                         />
                         <Text
                             className={'text-white text-sm ml-2'}
-                            style={{fontFamily: 'Nunito'}}
+                            style={style.regular}
                         >
                             Di sekitar ITB
                         </Text>
