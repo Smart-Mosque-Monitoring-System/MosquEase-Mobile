@@ -52,7 +52,7 @@ const Facilities = ({route}) => {
                 {mosque.address}
             </Text>
             <View
-                className={'flex flex-row items-center justify-between w-full max-h-[20%] mt-2'}
+                className={'flex flex-row items-center justify-between w-full max-h-[30%] mt-2'}
             >
                 {
                     <FlatList

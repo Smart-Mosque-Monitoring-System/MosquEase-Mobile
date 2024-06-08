@@ -7,8 +7,6 @@ import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import LiveUpdate from "./LiveUpdate";
 import Facilities from "./Facilities";
 
-const {width} = Dimensions.get('window');
-
 const DetailHero = ({navigation, route}) => {
     const mosque = route.params.item
     return (

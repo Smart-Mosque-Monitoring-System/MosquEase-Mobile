@@ -37,22 +37,7 @@ const MosqueDetail = ({navigation}) => {
                     navigation={navigation}
                     route={route}
                 />
-            </View>
-            <View
-                className={'w-full h-full bg-[#EFF4EC] items-center justify-center'}
-            >
-                <TouchableOpacity
-                    className={'w-full h-[10%] bg-[#0C6A39] items-center justify-center rounded-xl'}
-                    onPress={() => navigation.navigate('Home')}
-                >
-                    <Text
-                        className={'text-lg text-white'}
-                        style={style.bold}
-                    >
-                        Lihat Masjid Lain
-                    </Text>
-                </TouchableOpacity>
-            </View>
+                </View>
         </View>
     );
 }
