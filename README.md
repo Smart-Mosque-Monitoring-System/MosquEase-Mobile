@@ -17,7 +17,7 @@ A service to help find the nearest and most comfortable mosque for you.
 ## How do I use it?
 <a name="howtouse"></a>
 Currently, MosquEase is in alpha development and only supports one mosque location. However, you can build and run the app locally using Expo.
-There are some prequisites however, ensure you have [Node.js](https://nodejs.org/en) and npm installed on your system. If you already have it, here's how you can build your own Unwind application.
+There are some prequisites however, ensure you have [Node.js](https://nodejs.org/en) and npm installed on your system. If you already have it, here's how you can build your own MosquEase application.
 
 Clone this repository by using this command:
 
