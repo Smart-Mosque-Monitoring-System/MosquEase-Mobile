@@ -4,7 +4,8 @@ import HomeHero from '../components/HomeHero';
 import MosqueList from '../components/MosqueList';
 
 function Home({navigation, route}) {
-    const mosqueData = route.params;
+    const { mosque } = route.params;
+    // console.log(route)
     return (
         <View
             className={'flex flex-col items-start bg-white w-full h-full'}
@@ -15,7 +16,7 @@ function Home({navigation, route}) {
             <HomeHero />
             <MosqueList
                 navigation={navigation}
-                mosqueData={mosqueData}
+                mosqueData={mosque}
             />
         </View>
     );

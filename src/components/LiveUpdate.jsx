@@ -4,29 +4,30 @@ import style from '../ui/style'
 import {faDroplet, faPerson, faTemperatureHalf} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 
-const {width} = Dimensions.get('window');
-
 const LiveUpdate = ({route}) => {
     const mosque = route.params.item;
+    const live_footage = `data:image/png;base64,${mosque.img_string_base64}`;
+    // console.log(live_footage)
+    // console.log(mosque.name)
     const data = [
         {
             id: 1,
             title: 'Kelembaban',
-            value: '150',
+            value: mosque.humidity,
             unit: 'mmHg',
             logo: <FontAwesomeIcon icon={faDroplet} color={'#0C6A39'} size={40}/>
         },
         {
             id: 2,
             title: 'Suhu',
-            value: '27',
+            value: mosque.temperature,
             unit: 'Celcius',
             logo: <FontAwesomeIcon icon={faTemperatureHalf} color={'#0C6A39'} size={40}/>
         },
         {
             id: 3,
             title: 'Kapasitas',
-            value: '8',
+            value: mosque.head_count,
             unit: `/ ${mosque.capacity}`,
             logo: <FontAwesomeIcon icon={faPerson} color={'#0C6A39'} size={40}/>
         }
@@ -48,12 +49,12 @@ const LiveUpdate = ({route}) => {
                     className={'text-[10px]'}
                     style={style.regular}
                 >
-                    Updated 2 minutes ago
+                    Updated a minute ago
                 </Text>
             </View>
             <Image
                 className={'w-full h-[60%] rounded-2xl'}
-                source={require('../../assets/pics/slider1.png')}
+                source={{uri: live_footage}}
             />
             <View
                 className={'flex flex-row items-center justify-between w-full h-[20%] bg-[#EFF4EC] p-2 rounded-lg'}

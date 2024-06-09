@@ -4,8 +4,6 @@ import style from '../ui/style'
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 
-const {width} = Dimensions.get('window');
-
 const Facilities = ({route}) => {
     const mosque = route.params.item
     const facilities = [
