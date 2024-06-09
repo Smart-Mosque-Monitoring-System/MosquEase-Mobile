@@ -33,11 +33,11 @@ Install all the dependencies:
 
 Make sure you already have an Expo account, then build the project using EAS:
 
-    % eas build --profile development --platform android
+    eas build --profile development --platform android
 
 After the build is done, download the .apk through their site and install it on your device. Alternatively, you can follow the on-screen instructions to open the app in an emulator by typing:
 
-    % npm expo
+    npm expo
 
 Then press `a` to open it in the emulator. Done.
 
