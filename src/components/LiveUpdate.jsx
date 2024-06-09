@@ -7,8 +7,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 const LiveUpdate = ({route}) => {
     const mosque = route.params.item;
     const live_footage = `data:image/png;base64,${mosque.img_string_base64}`;
-    // console.log(live_footage)
-    // console.log(mosque.name)
     const data = [
         {
             id: 1,
@@ -53,7 +51,7 @@ const LiveUpdate = ({route}) => {
                 </Text>
             </View>
             <Image
-                className={'w-full h-[60%] rounded-2xl'}
+                className={'w-full h-[60%] rounded-2xl my-2'}
                 source={{uri: live_footage}}
             />
             <View

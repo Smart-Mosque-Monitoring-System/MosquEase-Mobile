@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import style from '../ui/style'
 
-const mosqueLogo = require('../../assets/pics/mosqueLogo.png')
+const mosqueLogo = require('../../assets/pics/mosqueHero.jpg')
 
 const HomeHero = () => {
     return (

@@ -5,7 +5,6 @@ import MosqueList from '../components/MosqueList';
 
 function Home({navigation, route}) {
     const { mosque } = route.params;
-    // console.log(route)
     return (
         <View
             className={'flex flex-col items-start bg-white w-full h-full'}

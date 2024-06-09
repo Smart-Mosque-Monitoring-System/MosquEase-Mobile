@@ -1,19 +1,9 @@
 import React from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, View} from 'react-native';
 import DetailHero from "../components/DetailHero";
 import {useRoute} from '@react-navigation/native';
-import style from '../ui/style';
 
-const slider1 = require('../../assets/pics/slider1.png');
-const slider2 = require('../../assets/pics/slider2.png');
-const slider3 = require('../../assets/pics/slider3.png');
-
-const images =
-    [
-        slider1,
-        slider2,
-        slider3,
-    ];
+const mosqueDetailPic = require('../../assets/pics/mosqueDetailPic.jpg');
 
 const MosqueDetail = ({navigation}) => {
     const route = useRoute();
@@ -22,11 +12,11 @@ const MosqueDetail = ({navigation}) => {
             className={'flex flex-col items-start bg-[#EFF4EC] w-full h-full'}
         >
             <View
-                className={'w-full h-[5%] bg-[#0C6A39]'}
+                className={'w-full h-[4.1%] bg-[#0C6A39]'}
             />
             <Image
                 className={'w-full max-h-[20%]'}
-                source={slider1}
+                source={mosqueDetailPic}
                 style={{width: '100%', height: 200}}
             />
 
@@ -37,7 +27,7 @@ const MosqueDetail = ({navigation}) => {
                     navigation={navigation}
                     route={route}
                 />
-                </View>
+            </View>
         </View>
     );
 }
