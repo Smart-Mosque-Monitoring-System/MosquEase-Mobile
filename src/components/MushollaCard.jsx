@@ -39,7 +39,7 @@ const MushollaCard = ({item, navigation}) => {
                     className={'text-xs'}
                     style={style.regular}
                 >
-                    Kapasitas: {item.occupied} / {item.capacity}
+                    Kapasitas: {item.head_count} / {item.capacity}
                 </Text>
             </View>
         </TouchableOpacity>
