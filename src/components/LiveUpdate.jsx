@@ -12,7 +12,7 @@ const LiveUpdate = ({route}) => {
             id: 1,
             title: 'Kelembaban',
             value: mosque.humidity,
-            unit: 'mmHg',
+            unit: '%RH',
             logo: <FontAwesomeIcon icon={faDroplet} color={'#0C6A39'} size={40}/>
         },
         {
